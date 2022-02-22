@@ -1,0 +1,10 @@
+Make sure you extracted the contents of starter-code outside the file to the project file, do not develop your code inside starter-code file!
+
+Use your category names to name the html and css files, rename yourcategoryname to your assigned category names
+
+All css files should be placed within the css folder, and Javascript files should be placed within the scripts folder
+
+For script files, create a new folder with the following naming convention:
+(purpose of script)-(category name)
+
+And dont forget to create a new branch for your own categories before commiting!

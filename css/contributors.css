@@ -1,0 +1,123 @@
+.main-background {
+    background-color: rgb(232, 237, 248);
+}
+
+.dropdown{
+    margin-bottom: 30px;
+    z-index:10000;
+}
+
+.icon-file{
+    color: lightseagreen;
+}
+
+.icon-clock{
+    color: hotpink;
+}
+
+.icon-lines{
+    color:orange;
+}
+
+.icon-lines-file{
+    color:plum;
+}
+
+.icon-repo{
+    color: lightskyblue;
+}
+
+ul.timeline {
+    list-style-type: none;
+    position: relative;
+    height: 100px;
+    width: 400px;
+}
+
+ul.timeline > li {
+    margin: 20px 0;
+    padding-left: 20px;
+}
+
+span.date {
+    color: teal;
+}
+
+.dashboard-background {
+    background-color: rgb(232, 237, 248);
+}
+
+
+#content {
+    width: 100%;
+    padding: 20px;
+    min-height: 100vh;
+    transition: all 0.3s;
+}
+
+.navbar {
+    padding: 10px 10px;
+    color: black;
+}
+
+h1 {
+    font-family: 'Open Sans', sans-serif;
+}
+
+.overview {
+    margin-bottom: 15px;
+}
+
+.card-icon {
+    padding: 20px;
+}
+
+.card-icon {
+    padding: 20px;
+}
+
+.card-overview {
+    margin: 10px 10px 10px 20px;
+    height: 260px;
+    border: none;
+    width: 200px;
+    border-radius: 20px;
+    display: inline-block;
+}
+
+
+.card-title {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 22px;
+    font-weight: 0.5px;
+    color: grey;
+}
+
+
+.card-activity {
+    height: 550px;
+    width: 900px;
+    border: none;
+    border-radius: 20px;
+    display: inline-block;
+    
+}
+
+.card-users {
+    margin: 5px 20px 20px 80px;
+    height: 400px;
+    width: 300px;
+    border: none;
+    border-radius: 20px;
+    display: inline-block;
+}
+
+#card-lines-repo{
+    position: relative;
+    bottom: 26px;
+}
+
+#card-most-recent-commiter{
+    position: relative;
+    bottom:6px;
+}

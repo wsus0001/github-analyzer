@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<head>
+    <!-- Required meta tags always come first -->  
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+
+    <!-- Bootstrap CSS and styles CSS-->
+    <link rel="stylesheet" href= "https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"> 
+    <link rel="stylesheet" href="css/dashboard.css">
+    <link rel="stylesheet" href="node_modules/font-awesome/css/font-awesome.min.css">
+    <link rel="stylesheet" href="node_modules/bootstrap-social/bootstrap-social.css">
+    <link rel="stylesheet" href="node_modules/@fortawesome/fontawesome-free/css/fontawesome.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/sidebar.css">
+    <link rel="stylesheet" href="css/files.css">
+
+    <link rel="stylesheet" href="https://cdn.datatables.net/1.10.19/css/dataTables.bootstrap4.min.css">
+
+    <!-- programming languages icons -->
+    <link rel="stylesheet" href="https://cdn.rawgit.com/konpa/devicon/df6431e323547add1b4cf45992913f15286456d3/devicon.min.css">
+
+
+
+
+    <!-- Scripts here-->
+    <script src="node_modules/chart.js/dist/Chart.js"></script>
+
+
+</head>
+
+<body class="dashboard-background">
+
+    <div class="wrapper">
+        
+        <nav id="sidebar"> 
+            <ul class="list-unstyled components">
+                <li class="sidebar-logo"><a href="./index.html" class="link-style"><h3><strong>GITHUB ANALYZER</strong></h3></a></li>
+                <li class="sidebar-text"><a href="./dashboard.html" class="link-style"><strong>Dashboard</strong><span class="sidebar-dashboard-icon fa fa-columns fa-2x"></span></a></li>
+                <li class="sidebar-text"><a href="./timeline.html" class="link-style"><strong>Timeline</strong><span class="sidebar-timeline-icon fa fa-clock-o fa-2x"></span></a></li>
+                <li class="sidebar-text"><a href="./issues.html" class="link-style"><strong>Issues</strong><span class="sidebar-issues-icon fa fa-list-ol fa-2x"></span></a></li>
+                <li class="sidebar-text-selected"><a class="link-style"><strong>Files</strong><span class="sidebar-files-icon fa fa-folder fa-2x"></span></a></li>
+                <li class="sidebar-text"><a href="./contributors.html" class="link-style"><strong>Contributors</strong><span class="sidebar-contributors-icon fa fa-user fa-2x"></span></a></li>
+                <li class="sidebar-text"><a href="./users.html" class="link-style"><strong>Users</strong></a></li>
+            </ul>
+        </nav>
+
+        <div id="content">
+                <div id="spinner-background" class="d-flex justify-content-center">
+                    <h3 style="text-align: center; width:50%; margin-top:480px; margin-left:90px;"> Loading data ...</h3>
+                    <div id="spinner" class="spinner-grow"></div>
+                </div>
+
+            <nav class="navbar navbar-expand-lg navbar-light fixed-top">
+                <div class="container-fluid">
+                    <ul class="navbar-nav ml-auto">
+                        <li class="nav-item"><a class="nav-link" href="./index.html"><strong>Home</strong></a></li>
+                        <li class="nav-item"><a class="nav-link" href="#"><strong>About Us</strong></a></li>
+                        <li class="nav-item"><a class="nav-link" href="#"><strong>Contact</strong></a></li>
+                    </ul>
+                </div>
+            </nav>
+
+            
+
+            <div class="container">
+                <div class="row">
+                    <div class="col-9 col-heading">
+                        <h2 id="file-title" class="file-title"><strong>Github Analyzer's files</strong></h2>
+                    </div>
+                </div>
+
+
+                <div class="row">
+
+
+                        <table id="fileTable" class="table table-hover" width="100%">
+                            <thead class="table-heading">
+                                <tr>
+                                    <th scope="col">Name</th>
+                                    <th scope="col">Commits</th>
+                                    <th scope="col">Last modified</th>
+                                    <th scope="col">Average time per commit</th>
+                                    <th class="file-count" scope="col">File count</th>
+                                </tr>
+                            </thead>
+
+                            <tbody> 
+  
+                            </tbody>
+
+                        </table>
+                    </div>
+
+
+                <div id="fileModal" class="modal fade" role="dialog">
+                    <div class="modal-dialog modal-lg" role="content">
+                        <div class="modal-content">
+                            <div class="modal-header text-white">
+                                <h4 class="modal-title"><strong>File statistics</strong></h4>
+                                <button type="button" class="close" data-dismiss="modal">&times;</button>
+                            </div>
+
+                            <div class="modal-body">
+                                <div class="row">
+                                    <div class="col-6 modal-text-committer">
+                                        <h2><strong>Committer</strong></h2>
+                                        <img class="rounded center-img" id="committer-img"  src="https://github.com/tensorflower-gardener.png" alt="...">
+                                        <h3 id="committer-name" class="modal-text"><strong></strong></h3>
+                                        <a id="view_committer_button" role="button" class="btn btn-lg btn-outline-danger" href="#">View profile</a>
+                                    </div>
+
+                                    <div class="col-6 modal-text">
+                                        <h2><strong>Main Contributor</strong></h2>
+                                        <img class="hoverable rounded center-img" id="contributor-img"  src="https://github.com/tensorflower-gardener.png" alt="...">
+                                        <h3 id="contributor-name" class="modal-text"><strong></strong></h3>
+
+                                        <a id="view_contributor_button" role="button" class="btn btn-lg btn-outline-info" href="#">View profile</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+            </div>
+            
+        </div>
+
+    </div>
+
+    <!-- jQuery CDN - Slim version (=without AJAX) -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <!-- Popper.JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.0/umd/popper.min.js" integrity="sha384-cs/chFZiN24E4KMATLdqdvsezGxaGsi4hLGOzlXwp5UZB1LY//20VyM2taTB4QvJ" crossorigin="anonymous"></script>
+    <!-- Bootstrap JS -->
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js"></script>
+
+    <script src="https://cdn.datatables.net/1.10.16/js/jquery.dataTables.min.js"></script>
+    <script src="https://cdn.datatables.net/1.10.16/js/dataTables.bootstrap4.min.js"></script>
+
+    <!--The files script-->
+    <script src="script/files/files.js"></script>
+    
+    <script>
+        $(document).ready(function() {
+            $("#fileTable").dataTable();
+        });
+    </script>
+</body>
+

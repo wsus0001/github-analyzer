@@ -1,0 +1,84 @@
+.dashboard-background {
+    background-color: rgb(232, 237, 248);
+}
+
+
+#content {
+    width: 100%;
+    padding: 20px;
+    min-height: 100vh;
+    transition: all 0.3s;
+}
+
+.navbar {
+    padding: 10px 10px;
+    color: black;
+}
+
+h1 {
+    font-family: 'Open Sans', sans-serif;
+}
+
+.overview {
+    margin-top: 5px;
+    margin-bottom: 5px;
+    margin-left: 10px;
+    font-size: 40px;
+}
+
+.card-icon {
+    padding: 20px;
+}
+
+.card-overview {
+    margin: 10px 10px 10px 20px;
+    height: 260px;
+    border: none;
+    width: 200px;
+    border-radius: 20px;
+    display: inline-block;
+}
+
+
+.card-title {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 22px;
+    font-weight: 0.5px;
+    color: grey;
+}
+
+.icon-branch {
+    color: purple;
+}
+
+.icon-tags {
+    color: blue;
+}
+
+.icon-commit {
+    color:yellow;
+}
+
+.icon-user {
+    color:green;
+}
+
+
+
+.card-activity {
+    margin: 20px 20px 20px 60px;
+    height: 600px;
+    width: 800px;
+    border: none;
+    border-radius: 20px;
+    display: inline-block;
+}
+
+.card-users {
+    margin: 20px 20px 20px 60px;
+    height: 1000px;
+    width: 800px;
+    border: none;
+    border-radius: 20px;
+    display: inline-block;
+}

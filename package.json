@@ -1,0 +1,34 @@
+{
+  "name": "github-analyzer",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "npm run lite",
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "lite": "lite-server"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Idea456/github-analyzer.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Idea456/github-analyzer/issues"
+  },
+  "homepage": "https://github.com/Idea456/github-analyzer#readme",
+  "devDependencies": {
+    "@fortawesome/fontawesome-free": "^5.10.2",
+    "bootstrap": "^4.3.1",
+    "jquery": "^1.9.1",
+    "popper.js": "^1.14.7"
+  },
+  "dependencies": {
+    "bootstrap-social": "^5.1.1",
+    "chart.js": "^2.8.0",
+    "datatables.net-bs4": "^1.10.19",
+    "font-awesome": "^4.7.0",
+    "live-server": "^1.2.1"
+  }
+}

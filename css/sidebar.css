@@ -1,0 +1,98 @@
+.wrapper {
+    display: flex;
+    width: 100%;
+}
+
+*{
+    margin: 0px;
+    padding: 0;
+    font-family: sans-serif;
+  }
+  
+#sidebar {
+    min-width: 250px;
+    max-width: 200px;
+    min-height: 100vh;
+    background: rgb(38,40,66);
+    z-index: 1;
+}
+
+#sidebar ul .sidebar-active {
+    border-right: 5px;
+}
+#sidebar ul .sidebar-logo{
+    color: White;
+    list-style:none;
+    padding: 20px 15px 15px 20px;
+}
+
+#sidebar ul .sidebar-text{
+    color: White;
+    list-style:none;
+    padding: 20px 15px 15px 20px;
+}
+
+#sidebar ul .sidebar-text:hover {
+    background: grey;
+}
+
+#sidebar ul .sidebar-text-selected{
+    color: white;
+    background: grey;
+    list-style:none;
+    padding: 20px 15px 15px 20px;
+    cursor: default;
+    pointer-events: none;
+}
+
+#sidebar ul .sidebar-text-logo{
+    list-style:none;
+    padding: 20px 15px 15px 20px;
+}
+
+#sidebar ul .toggle-button{
+        color: white;
+        padding: 20px 20px 20px 20px;
+        text-align: right;
+}
+
+#sidebar ul li .sidebar-dashboard-icon {
+    padding-left: 95px;
+    vertical-align: middle;
+}
+
+
+#sidebar ul li .sidebar-statistics-icon {
+    padding-left: 105px;
+    vertical-align: middle;
+}
+
+#sidebar ul li .sidebar-timeline-icon {
+    padding-left: 115px;
+    vertical-align: middle;
+}
+
+#sidebar ul li .sidebar-issues-icon {
+    padding-left: 125px;
+    vertical-align: middle;
+}
+
+#sidebar ul li .sidebar-files-icon {
+    padding-left: 143px;
+    vertical-align: middle;
+}
+
+#sidebar ul li .sidebar-contributors-icon {
+    padding-left: 85px;
+    vertical-align: middle;
+}
+
+
+.link-style {
+    color:white;
+    text-decoration: none;
+}
+
+.link-style:hover {
+    color: white;
+}

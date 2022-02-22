@@ -1,0 +1,46 @@
+
+.main-background {
+    background-image: url("background.png");
+    background-size: cover;
+    
+}
+
+
+.row-header {
+    margin-top : 200px;
+    margin-bottom: 20px;
+    font-size: 30px;
+    color: white;
+}
+
+
+.bar-column {
+    margin :0px 0px 0px 0px;
+}
+
+
+.navbar-active {
+    border-bottom: 3px solid white;
+}
+
+.icon-logo {
+    color : yellow;
+}
+
+.card-content {
+    margin : 20px 0px 0px 0px;
+}
+
+
+.box {
+    position: fixed;
+    top: 0;
+    transform: rotate(80deg); 
+    left: 0;
+  }
+  
+
+.team-logo {
+    color: yellow;
+}
+

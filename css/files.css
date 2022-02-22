@@ -1,0 +1,144 @@
+table.dataTable thead th {
+    position: relative;
+    background-image: none !important;
+}
+
+table.dataTable thead .sorting:after,
+table.dataTable thead .sorting_asc:after,
+table.dataTable thead .sorting_desc:after,
+table.dataTable thead .sorting_asc_disabled:after,
+table.dataTable thead .sorting_desc_disabled:after{
+    position: absolute;
+    top: 12px;
+    right: 8px;
+    display: block;
+    font-family: FontAwesome;
+}
+
+.dashboard-background {
+    background-color: rgb(232, 237, 248);
+}
+
+.file-title {
+    margin-top: 40px;
+    font-size: 30px;
+}
+
+.search-box {
+    margin-top: 40px;
+}
+
+.table-heading {
+    color: white;
+    background-color: rgb(38,40,66);
+}
+
+.file-count {
+    text-align: right;
+}
+
+.file-name {
+    vertical-align: middle;
+}
+
+.file-icon {
+    text-align: right;
+}
+
+
+table .fa-folder {
+    color: yellow;
+    padding-right: 10px;
+}
+
+table .fa-html5 {
+    color: orange;
+}
+
+table span {
+    padding-right: 10px;
+}
+
+.modal-header {
+    color:white;
+    background-color: rgb(38,40,66);
+}
+
+
+#fileModal .modal-header .close {
+    color: white;
+    padding-left: 20px;
+}
+
+table {
+    border-collapse:separate;
+    border:solid grey 1px;
+    border-radius:6px;
+    -moz-border-radius:6px;
+}
+
+th {
+    border-top: none;
+}
+
+td:first-child, th:first-child {
+     border-left: none;
+}
+
+td {
+    background-color: white;
+}
+
+.table-hover tbody tr:hover td {
+    background: whitesmoke;
+}
+
+.modal-text-committer {
+    text-align: center;
+    border-right : 1px solid grey;
+    font-style: bold;
+    margin-top:10px;
+}
+
+.modal-text {
+    text-align: center;
+    font-style: bold;
+    margin-top:10px;
+}
+
+.center-img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#spinner-background {
+    /* position: absolute;
+    z-index: 1;
+    left:100;
+    background-color: rgba(255,255,255);
+    left: 50%;
+    top: 50%; */
+    position: absolute;
+    width:100%;
+    top:0;
+    bottom:0;
+    left:0;
+    right:0;
+    background-color: rgba(255,255,255,0.7);
+    z-index:9999;
+    display:none;
+    /* filter: blur(20px); */
+}
+
+#spinner {
+    position: absolute;
+    z-index: 1;
+    left:100;
+    left: 50%;
+    top: 50%;
+    width:60px;
+    height:60px;
+    background-color:purple;
+}
+

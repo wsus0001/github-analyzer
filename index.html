@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<head>
+    <!-- Required meta tags always come first -->  
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+
+    <!-- Bootstrap CSS and styles CSS-->
+    <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="node_modules/font-awesome/css/font-awesome.min.css">
+    <link rel="stylesheet" href="node_modules/bootstrap-social/bootstrap-social.css">
+    <link href="https://fonts.googleapis.com/css?family=Lobster|Open+Sans&display=swap" rel="stylesheet">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.6.0/Chart.min.js"></script>
+
+</head>
+
+<body class="main-background">
+    <!-- navbar here -->
+    <nav class="navbar navbar-expand-lg navbar-dark fixed-top">
+        <div class="container">
+            <a class="navbar-brand"><h1 class="team-logo"><strong>AgileAF</strong>&reg;</h1></a>
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item active navbar-active"><a class="nav-link" href="#"><strong>Home</strong></a></li>
+                <li class="nav-item"><a class="nav-link" href="#"><strong>About Us</strong></a></li>
+                <li class="nav-item"><a class="nav-link" href="#"><strong>Contact</strong></a></li>
+            </ul>
+        </div>
+    </nav>
+
+    </header>
+
+    <div class="container">
+
+        <div class="row row-header text-center">
+            <div class="col-12">
+                <span class="fa fa-github fa-5x icon-logo mx-auto d-block"></span>
+                <h1><strong>Github Analyzer</strong></h1>
+                <h4>Enter a repository link or a user name to analyse<h4>
+            </div>
+        </div>
+
+        <div class="form-group row text-center">
+            <div class="col-3"></div>
+            <div class="col-6">
+                <div class="input-group mb-3">
+                    <input id="url" type="text" class="form-control">
+                </div>
+            </div>
+            <div class="col-3"></div>
+
+            <div class="col-12">
+                <a role="button" onclick="storeURL()" class="btn btn-lg btn-outline-danger" href="./dashboard.html">Analyse</a>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- Session storage to store url -->
+    <!-- When you want to retrieve the url from the local storage, use sessionStorage.getItem("url") -->
+    <!-- "url" is the key to obtain the value -->
+    <script>
+        function storeURL() {
+            const url = document.getElementById("url");
+            sessionStorage.setItem("url", url.value);
+        }
+    </script>
+
+    <script src="./node_modules/jquery/jquery.min.js"></script>
+    <script src="./node_modules/popper.js/dist/popper.min.js"></script>
+    <script src="./node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+</body>
+
+
+
+
+</html>

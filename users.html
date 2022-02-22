@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<head>
+    <!-- Required meta tags always come first -->  
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+
+    <!-- Bootstrap CSS and styles CSS-->
+    <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="node_modules/font-awesome/css/font-awesome.min.css">
+    <link rel="stylesheet" href="node_modules/bootstrap-social/bootstrap-social.css">
+    <link rel="stylesheet" href="node_modules/@fortawesome/fontawesome-free/css/fontawesome.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/sidebar.css">
+    <!-- make sure to rename this css file to your category name -->
+    <link rel="stylesheet" href="css/users.css">
+
+
+
+    <!-- Scripts here-->
+    <script src="node_modules/chart.js/dist/Chart.js"></script>
+
+
+</head>
+
+<body class="main-background">
+
+    <div class="wrapper">
+        <!-- the sidebar -->
+        <nav id="sidebar"> 
+            <ul class="list-unstyled components">
+                <!-- make sure to link your html file here at the href attribute, replace index with your category-->
+                <!-- use sidebar-text-selected instead of sidebar-text for your category class -->
+                <li class="sidebar-logo"><a href="./index.html" class="link-style"><h3><strong>GITHUB ANALYZER</strong></h3></a></li>
+                <li class="sidebar-text"><a href="./dashboard.html" class="link-style"><strong>Dashboard</strong></a></li>
+                <li class="sidebar-text"><a href="./timeline.html" class="link-style"><strong>Timeline</strong></a></li>
+                <li class="sidebar-text"><a href="./issues.html" class="link-style"><strong>Issues</strong></a></li>
+                <li class="sidebar-text"><a href="./files.html" class="link-style"><strong>Files</strong></a></li>
+                <li class="sidebar-text"><a href="./contributors.html" class="link-style"><strong>Contributors</strong></a></li>
+                <li class="sidebar-text"><a href="./users.html" class="link-style"><strong>Users</strong></a></li>
+            </ul>
+        </nav>
+
+        <div id="content">
+
+            <!-- start filling your content here-->
+
+            <div class="container">
+                
+                <div class="row">
+                    
+                    <div class="col-12">
+                           <input type = "text" id = "search-user" placeholder="search..."/>
+                           <input type="button" id = "search-button" value="Search" onclick = "getUserInfo()" />
+                    </div>
+
+                </div>
+
+                <div class = "row">
+
+                    <div class = "col-12">
+                        <div class="card card-user-info">
+                            <div class="card-body">
+                                <h4 id = "user-info-heading"> User Information</h4>
+                                <ul class = "user-info-list">
+                                    <li>Name: <span id = "user-full-name"></span> <br /></li>
+                                    <li>Username: <span id = "username"></span> <br /></li>
+                                    <li>Location: <span id = "user-location"></span> <br/></li>
+                                    <li>Company: <span id = "user-company"></span> <br/></li>
+                                    <li>Date joined: <span id = "user-date-joined"></span> <br/></li>
+                                    <li>Bio: <span id = "user-bio"></span> <br/></li>
+                                    <li>Repos: <span id = "user-repos"></span> <br/></li>
+                                    <li>Url:<span id = "user-url"></span> <br/></li>
+                                </ul>
+                            </div>
+                        </div>
+
+                    </div>
+
+                    <!--
+                    <div class = "col-6">
+                            <div class="card card-user-info scroll">
+                                <div class="card-body">
+                                    <h4> List of repos </h4>
+                                    <ul class = "user-info-list" id = "list-of-repos">
+                                        
+                                    </ul>
+                                </div>
+                            </div>
+    
+                        </div>
+                    -->
+
+                </div>
+
+                
+                <div class = "row">
+
+                    <div class = "col-12">
+                        <div class="card card-user-info scroll">
+                            <div class="card-body">
+                                <h4> List of repos </h4>
+                                <ul class = "user-info-list" id = "list-of-repos">
+                                    
+                                </ul>
+                            </div>
+                        </div>
+
+                    </div>
+
+                </div>
+            
+    
+            </div>
+
+        </div>
+    
+    </div>
+
+    <script src = "users-query.js"></script>
+
+
+    <!-- DONT MODIFY THIS SECTION -->
+    <!-- jQuery CDN  -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <!-- Popper.JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.0/umd/popper.min.js" integrity="sha384-cs/chFZiN24E4KMATLdqdvsezGxaGsi4hLGOzlXwp5UZB1LY//20VyM2taTB4QvJ" crossorigin="anonymous"></script>
+    <!-- Bootstrap JS -->
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js" integrity="sha384-uefMccjFJAIv6A+rW+L4AHf99KvxDjWSu1z9VI8SKNVmz4sk7buKt/6v9KI65qnm" crossorigin="anonymous"></script>
+
+</body>
+
+
+    
+    

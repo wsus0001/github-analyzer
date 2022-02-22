@@ -1,0 +1,111 @@
+.main-background {
+    background-color: rgb(232, 237, 248);
+}
+
+#search-user{
+    margin-bottom: 30px;
+    z-index:10000;
+}
+
+.dashboard-background {
+    background-color: rgb(232, 237, 248);
+}
+
+#search-button{
+    background-color: burlywood;
+    border-color: burlywood;
+    border: none;
+    padding: 2px;
+    color: white;
+}
+
+#content {
+    width: 100%;
+    padding: 20px;
+    min-height: 100vh;
+    transition: all 0.3s;
+}
+
+.navbar {
+    padding: 10px 10px;
+    color: black;
+}
+
+h1 {
+    font-family: 'Open Sans', sans-serif;
+}
+
+.overview {
+    margin-top: 20px;
+    margin-bottom: 2px;
+    margin-left: 10px;
+    font-size: 35px;
+}
+
+.card-icon {
+    padding: 20px;
+}
+
+.card-overview {
+    margin: 10px 10px 10px 20px;
+    height: 260px;
+    border: none;
+    width: 150px;
+    border-radius: 20px;
+    display: inline-block;
+}
+
+
+.card-title {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 12px;
+    font-weight: 0.5px;
+    color: grey;
+}
+
+.card-activity {
+    height: 500px;
+    width: 800px;
+    border: none;
+    border-radius: 20px;
+    display: inline-block;
+    
+}
+
+.card-user-info {
+    margin: 5px 20px 20px 80px;
+    height: 350px;
+    width: 500px;
+    border: none;
+    border-radius: 20px;
+    display: inline-block;
+}
+
+ul.user-info-list{
+    list-style-type: none;
+}
+
+ul.user-info-list > li {
+    color: cornflowerblue;
+    font-weight: bold;
+}
+
+h4{
+    font-weight: bold;
+    color: midnightblue;
+}
+
+li > span {
+    color: black;
+    font-weight: normal;
+}
+
+a{
+    font-weight: bold;
+    color:blue;
+}
+
+.scroll {
+    max-height: 350px;
+    overflow-y: auto;
+}

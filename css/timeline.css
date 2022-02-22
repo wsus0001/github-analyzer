@@ -1,0 +1,67 @@
+.main-background {
+    background-color: rgb(232, 237, 248);
+}
+
+#content {
+    width: 100%;
+    padding: 20px;
+    min-height: 100vh;
+    transition: all 0.3s;
+}
+
+.navbar {
+    padding: 10px 10px;
+    color: black;
+}
+
+.container {
+    margin-top: 40px;
+}
+
+.timeline-header {
+    margin-top: 5px;
+    margin-bottom: 2px;
+    margin-left: 10px;
+    font-size: 35px;
+}
+
+.timeline {
+    margin-top: 20px;
+    margin-right: 60px;
+}
+
+.activity-contents {
+    margin-top: 10px;
+    margin-bottom: 5px;
+}
+
+.file-image {
+    width: 24px;
+    height: 20px;
+}
+
+.details {
+    display: none;
+    margin-right: 60px;
+}
+
+.margin-around-border {
+    margin: 20px;
+}
+
+.table {
+    margin-bottom: 30px;
+}
+
+td {
+    width: 20%;
+    word-break: break-all;
+}
+
+/* .file {
+    text-align: left;
+}
+
+.author {
+    text-align: right;
+} */
